@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>野村太鼓40周年 演目紹介</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f7f2e6;
+    --bg2:#efe8d6;
+    --paper:#fcf9f1;
+    --ink:#1e1c18;
+    --ink2:#4a463e;
+    --muted:#7a7466;
+    --line:#ddd3bc;
+    --line2:#cbbfa3;
+    --accent:#b03a26;
+    --accent-soft:#f3e2d8;
+    --indigo:#2f3e5c;
+    --card:#fffdf7;
+    --shadow:0 1px 0 rgba(30,28,24,.04), 0 10px 30px rgba(60,50,30,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#171512;
+      --bg2:#1e1b17;
+      --paper:#201d19;
+      --ink:#f0ead9;
+      --ink2:#d6cfbc;
+      --muted:#a89f8a;
+      --line:#3a352c;
+      --line2:#4a4438;
+      --accent:#e07a5f;
+      --accent-soft:#3a2a24;
+      --indigo:#9db0d1;
+      --card:#23201b;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:
+      radial-gradient(900px 500px at 50% -80px, var(--accent-soft) 0%, transparent 55%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+    color:var(--ink);
+    font-family:"Noto Sans JP", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.7;
+  }
+  a{color:inherit}
+  .wrap{max-width:680px;margin:0 auto;padding:0 18px 0}
+  /* header */
+  header{padding:34px 0 8px;text-align:center}
+  .tomoe{
+    width:54px;height:54px;margin:0 auto 14px;border:1.5px solid var(--ink);border-radius:50%;
+    display:grid;place-items:center;position:relative;background:var(--paper);
+  }
+  .tomoe::before{content:"";position:absolute;border-radius:50%;background:var(--accent);width:8px;height:8px;top:9px;left:50%;transform:translateX(-50%)}
+  .tomoe span{font-family:"Shippori Mincho","Noto Serif JP",serif;font-weight:800;font-size:11px;letter-spacing:.18em;margin-top:14px}
+  .kicker{font-size:12px;letter-spacing:.28em;color:var(--accent);font-weight:700;text-transform:none}
+  h1{
+    font-family:"Shippori Mincho","Noto Serif JP",serif;
+    font-weight:800;line-height:1.15;margin:10px 0 6px;letter-spacing:.04em;
+  }
+  h1 .l1{display:block;font-size:15px;letter-spacing:.32em;font-weight:600;color:var(--ink2)}
+  h1 .l2{display:block;font-size:42px;margin-top:6px}
+  h1 .l3{display:block;font-size:28px;letter-spacing:.18em;margin-top:2px}
+  .event{
+    margin:18px auto 0;max-width:520px;background:var(--paper);border:1px solid var(--line);
+    border-top:3px solid var(--accent);padding:14px 16px 12px;box-shadow:var(--shadow);
+  }
+  .event .date{font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;letter-spacing:.03em}
+  .event .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;margin-top:6px;font-size:13.5px;color:var(--ink2)}
+  .event .meta b{color:var(--ink);font-weight:700}
+  .free{display:inline-block;margin-top:8px;font-size:12px;letter-spacing:.18em;border:1px solid var(--accent);color:var(--accent);padding:3px 10px 2px;border-radius:999px;font-weight:700}
+  /* nav */
+  nav{
+    position:sticky;top:0;z-index:20;margin:18px -18px 0;padding:10px 18px;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  }
+  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+  nav a{
+    display:inline-flex;align-items:center;min-height:38px;padding:7px 14px;border:1px solid var(--line2);border-radius:999px;
+    text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.06em;background:var(--paper);
+  }
+  nav a:active{border-color:var(--accent);color:var(--accent)}
+  /* sections */
+  section{padding:28px 0 6px}
+  .sec-head{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:6px}
+  .sec-head .no{font-family:"Shippori Mincho",serif;font-size:13px;letter-spacing:.2em;color:var(--accent);font-weight:700;white-space:nowrap}
+  .sec-head h2{font-family:"Shippori Mincho","Noto Serif JP",serif;font-size:26px;margin:0;letter-spacing:.08em;line-height:1.2}
+  .sec-head .en{margin-left:auto;font-size:11px;letter-spacing:.22em;color:var(--muted);white-space:nowrap}
+  /* program */
+  .item{padding:20px 0 18px;border-bottom:1px solid var(--line)}
+  .item:last-child{border-bottom:none}
+  .item-top{display:flex;gap:14px;align-items:flex-start}
+  .num{
+    flex:0 0 auto;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--ink);
+    display:grid;place-items:center;font-family:"Shippori Mincho",serif;font-weight:700;font-size:16px;background:var(--paper);margin-top:2px;
+  }
+  .item.accent .num{border-color:var(--accent);color:var(--accent)}
+  .title{font-family:"Shippori Mincho","Noto Serif JP",serif;font-weight:700;font-size:24px;line-height:1.3;letter-spacing:.03em;margin:0}
+  .title small{font-size:15px;font-weight:600;letter-spacing:.02em}
+  .meta-line{margin-top:5px;font-size:12.5px;color:var(--muted);letter-spacing:.04em;display:flex;flex-wrap:wrap;gap:4px 10px}
+  .meta-line span::before{content:"";display:inline-block;width:5px;height:5px;background:var(--accent);border-radius:50%;vertical-align:middle;margin-right:6px;position:relative;top:-1px}
+  .meta-line span:first-child::before{display:none}
+  .desc{margin:10px 0 0 52px;font-size:15.5px;line-height:1.95;color:var(--ink2);letter-spacing:.015em}
+  @media (max-width:420px){ .desc{margin-left:0} .title{font-size:22px} }
+  /* sub pieces inside a slot */
+  .subs{margin-left:52px;margin-top:4px}
+  @media (max-width:420px){ .subs{margin-left:0} }
+  .sub{padding:14px 0 12px;border-top:1px dashed var(--line2)}
+  .sub:first-child{border-top:none;padding-top:8px}
+  .sub h3{font-family:"Shippori Mincho",serif;font-size:19px;margin:0;line-height:1.35}
+  .sub .desc{margin-left:0;margin-top:8px}
+  .slot-label{margin-left:52px;font-size:11px;letter-spacing:.18em;color:var(--muted);font-weight:700}
+  @media (max-width:420px){ .slot-label{margin-left:0} }
+  /* guest */
+  .guest-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:18px 0 8px}
+  @media (max-width:480px){ .guest-list{grid-template-columns:1fr} }
+  .guest{
+    background:var(--card);border:1px solid var(--line);padding:16px;text-align:center;box-shadow:var(--shadow)
+  }
+  .guest .gnum{font-size:11px;letter-spacing:.2em;color:var(--muted);font-weight:700}
+  .guest .gname{font-family:"Shippori Mincho",serif;font-size:26px;font-weight:700;margin-top:4px;letter-spacing:.06em}
+  /* finale */
+  .divider{display:flex;align-items:center;gap:14px;padding:26px 0 0;color:var(--muted)}
+  .divider::before,.divider::after{content:"";height:1px;background:var(--line2);flex:1}
+  .divider i{width:7px;height:7px;background:var(--accent);transform:rotate(45deg);display:block}
+  .finale{
+    margin-top:14px;background:var(--paper);border:1px solid var(--line2);border-top:3px solid var(--indigo);
+    padding:20px 18px 18px;box-shadow:var(--shadow)
+  }
+  .finale .item{border:none;padding:0}
+  .finale .desc{color:var(--ink2)}
+  /* interlude */
+  .interlude{margin:28px 0 0;border:1px solid var(--line);background:var(--paper);padding:16px 18px}
+  .interlude h3{font-family:"Shippori Mincho",serif;font-size:14px;letter-spacing:.18em;margin:0 0 8px;color:var(--ink2)}
+  .interlude p{margin:0;font-size:13.5px;line-height:1.9;color:var(--muted)}
+  .interlude b{color:var(--ink2);font-weight:700}
+  footer{padding:34px 0 44px;text-align:center}
+  footer .fname{font-family:"Shippori Mincho",serif;font-size:20px;letter-spacing:.42em;text-indent:.42em;font-weight:700}
+  footer .fsub{font-size:11px;letter-spacing:.2em;color:var(--muted);margin-top:6px}
+  .top-link{display:inline-flex;align-items:center;min-height:40px;padding:8px 16px;margin-top:18px;border:1px solid var(--line2);border-radius:999px;text-decoration:none;font-size:13px;font-weight:700;background:var(--paper)}
+</style>
+</head>
+<body>
+<div class="wrap" id="top">
+  <header>
+    <div class="tomoe" aria-hidden="true"><span>野村</span></div>
+    <div class="kicker">40TH ANNIVERSARY</div>
+    <h1>
+      <span class="l1">野村太鼓</span>
+      <span class="l2">40周年記念公演</span>
+      <span class="l3">演目紹介</span>
+    </h1>
+    <div class="event">
+      <div class="date">2026年12月13日（日）　開場 12:30 ・ 開演 13:00</div>
+      <div class="meta"><span><b>会場</b> 大津市和邇文化センター</span></div>
+      <div><span class="free">入場無料</span></div>
+    </div>
+  </header>
+
+  <nav aria-label="演目への移動">
+    <ul>
+      <li><a href="#part1">第一部「祭り」</a></li>
+      <li><a href="#part2">第二部「伝統」</a></li>
+      <li><a href="#guest">ゲスト演奏</a></li>
+      <li><a href="#part3">第三部「つながり」</a></li>
+    </ul>
+  </nav>
+
+  <!-- 第一部 -->
+  <section id="part1">
+    <div class="sec-head"><span class="no">第一部</span><h2>祭り</h2><span class="en">PART 1</span></div>
+
+    <article class="item">
+      <div class="item-top"><div class="num">1</div><h3 class="title">伊勢音頭 ～ 上り囃子</h3></div>
+      <div class="subs">
+        <div class="sub">
+          <h3>伊勢音頭（唄）</h3>
+          <div class="meta-line"><span>南小松伝統唱歌</span></div>
+          <p class="desc">お伊勢参りに行く道中に歌われた唄。南小松ではお祭りなどで歌われてきています。</p>
+        </div>
+        <div class="sub">
+          <h3>上り囃子</h3>
+          <div class="meta-line"><span>野村太鼓オリジナル</span><span>作曲：奥山正一郎エリオ</span></div>
+          <p class="desc">人々が次第に御宮へと集まる様子と祭りの始まりの高揚感を表現した曲。</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">2</div><h3 class="title">虫送り ～ 祭太鼓</h3></div>
+      <div class="subs">
+        <div class="sub">
+          <h3>虫送り</h3>
+          <div class="meta-line"><span>野村伝統楽曲</span></div>
+          <p class="desc">松明を手に練り歩き、虫送り唄を歌いながら太鼓や笛を打ち鳴らし、田畑の害虫を追い払う伝統行事に由来する曲。</p>
+        </div>
+        <div class="sub">
+          <h3>雨乞い</h3>
+          <div class="meta-line"><span>野村伝統楽曲</span></div>
+          <p class="desc">日照りが続く際に、田畑を潤す恵みの雨を龍神様に願い、祈りを込めて打ち鳴らされた太鼓。</p>
+        </div>
+        <div class="sub">
+          <h3>祭太鼓</h3>
+          <div class="meta-line"><span>野村伝統楽曲</span></div>
+          <p class="desc">南小松八幡神社で五穀豊穣を祈る春の祭礼において、神輿渡御を先導して担ぎ手を鼓舞し祭りを盛り上げるために演奏している伝統曲です。</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">3</div><div><h3 class="title">かがり火太鼓</h3><div class="meta-line"><span>作曲：関 刀鼓</span></div></div></div>
+      <p class="desc">長良川の鵜飼いの様子をモチーフにした曲。かがり火をイメージした華麗に回すバチさばきに注目です。</p>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">4</div><div><h3 class="title">清流登り打ち</h3><div class="meta-line"><span>作曲：関 刀鼓</span></div></div></div>
+      <p class="desc">落雷や豪雨によって濁流となった美濃の山河が、再び清流へと戻り、若鮎が力強く瀬を上っていく様子を表現した曲。</p>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">5</div><div><h3 class="title">渡 <small>-WATARI-</small></h3><div class="meta-line"><span>野村太鼓オリジナル</span><span>作曲：奥山正一郎エリオ</span></div></div></div>
+      <p class="desc">南小松の祭りの御輿渡御をイメージし、担ぎ手の掛け声や御輿の躍動、巫女の舞など、祭りの熱気を表現した一曲。</p>
+    </article>
+  </section>
+
+  <!-- 第二部 -->
+  <section id="part2">
+    <div class="sec-head"><span class="no">第二部</span><h2>伝統</h2><span class="en">PART 2</span></div>
+
+    <article class="item">
+      <div class="item-top"><div class="num">6</div><h3 class="title">ろくろ節 ～ 三宅</h3></div>
+      <div class="subs">
+        <div class="sub">
+          <h3>ろくろ節（唄）</h3>
+          <div class="meta-line"><span>北小松伝統唱歌</span><span>協力：旧北小松地歌会　福島政和さん</span></div>
+          <p class="desc">北小松の地曳き網漁で、浜辺から網を引き寄せるろくろを回す際に歌われた、昔ながらの仕事唄。</p>
+        </div>
+        <div class="sub">
+          <h3>三宅</h3>
+          <div class="meta-line"><span>三宅島伝統芸能</span></div>
+          <p class="desc">三宅島に伝わる三宅島神着神輿太鼓を舞台アレンジした曲。低い姿勢から打ち込む力強いリズムと掛け合いが特徴。</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">7</div><div><h3 class="title">八丈</h3><div class="meta-line"><span>八丈島伝統芸能</span></div></div></div>
+      <p class="desc">東京都八丈島に伝わる伝統芸能。浴衣姿の女性メンバーが、舞うようなしなやかな動きと力強いバチさばきで華やかに打ち鳴らします。</p>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">8</div><div><h3 class="title">屋台囃子</h3><div class="meta-line"><span>秩父地方伝統芸能</span></div></div></div>
+      <p class="desc">埼玉県秩父地方に伝わる、屋台や笠鉾の曳行に合わせて演奏される伝統的なお囃子です。大太鼓、締太鼓、鉦、笛が織りなす、力強く躍動感あふれるリズムが特徴。</p>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">9</div><div><h3 class="title">比良の風</h3><div class="meta-line"><span>野村太鼓オリジナル</span><span>作曲：小林くみ子</span></div></div></div>
+      <p class="desc">地元の名物、山から吹き降ろす「比良おろし」をイメージし、プロ和太鼓奏者・小林くみ子さんに作曲いただいた楽曲。</p>
+    </article>
+  </section>
+
+  <!-- ゲスト -->
+  <section id="guest">
+    <div class="sec-head"><span class="no">ゲスト演奏</span><h2>ゲスト</h2><span class="en">GUEST</span></div>
+    <div class="guest-list">
+      <div class="guest"><div class="gnum">10</div><div class="gname">楽鼓</div></div>
+      <div class="guest"><div class="gnum">11</div><div class="gname">逆説RO</div></div>
+    </div>
+  </section>
+
+  <!-- 第三部 -->
+  <section id="part3">
+    <div class="sec-head"><span class="no">第三部</span><h2>つながり</h2><span class="en">PART 3</span></div>
+
+    <article class="item">
+      <div class="item-top"><div class="num">12</div><div><h3 class="title">絆</h3><div class="meta-line"><span>作曲：小林くみ子</span></div></div></div>
+      <p class="desc">小林くみ子さんに直接指導していただき、野村太鼓でも子供から大人まで大切に演奏してきた活気あふれる一曲。</p>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">13</div><div><h3 class="title">華囃子</h3><div class="meta-line"><span>作曲：佐藤ぶん太</span></div></div></div>
+      <p class="desc">津軽笛奏者・佐藤ぶん太さん作曲。華やかで軽快な篠笛の旋律に乗せ、太鼓とともに飛び跳ねながら演奏する、賑やかで楽しいお囃子。</p>
+    </article>
+
+    <article class="item">
+      <div class="item-top"><div class="num">14</div><div><h3 class="title">族</h3><div class="meta-line"><span>鼓童</span><span>作曲：レナード衛藤</span></div></div></div>
+      <p class="desc">「太鼓を打つ仲間」という意味が込められた一曲。今回の公演では、太鼓を通して出会い、つながってきたすべての方々への感謝の気持ちを表現します。</p>
+    </article>
+  </section>
+
+  <div class="divider" aria-hidden="true"><i></i></div>
+
+  <div class="finale">
+    <article class="item accent">
+      <div class="item-top"><div class="num">15</div><div><h3 class="title">紡</h3><div class="meta-line"><span>野村太鼓オリジナル</span><span>作曲：小川健介</span></div></div></div>
+      <p class="desc">今回の公演のために作曲した新曲。40年の歩みの中で紡いできた音や伝統、仲間との絆を胸に、会場の皆さんと心をひとつにする華やかな一曲。太鼓に想いを乗せ、子供たちへ、そして未来へと伝統を紡いでいきます。</p>
+    </article>
+  </div>
+
+  <aside class="interlude">
+    <h3>転換曲</h3>
+    <p><b>越天楽</b>（雅楽）　／　<b>道（笛）</b>（鼓童）　／　<b>Jang-Wara</b>（鼓童・作曲：金子竜太郎）</p>
+  </aside>
+
+  <footer>
+    <div class="fname">野村太鼓</div>
+    <div class="fsub">NOMURA TAIKO</div>
+    <div><a class="top-link" href="#top">↑ ページの先頭へ</a></div>
+  </footer>
+</div>
+</body>
+</html>
